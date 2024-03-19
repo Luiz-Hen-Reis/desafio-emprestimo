@@ -1,10 +1,6 @@
-export enum LoanType {
-  PERSONAL = "PERSONAL",
-  GUARANTEED = "GUARANTEED",
-  CONSIGMENT = "CONSIGMENT"
-}
+import { ILoan, LoanType } from "./src/types/Loan";
 
-export const loans = [
+export const loans: ILoan[] = [
     {
       type: LoanType.PERSONAL,
       interest_rate: 4,
